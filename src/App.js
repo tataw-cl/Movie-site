@@ -3,7 +3,7 @@ import "./App.css";
 import SearchIcon from "./search.svg";
 import Movie from "./movies";
 
-const API_url = "http://www.omdbapi.com?apikey=6ac0248d";
+const API_url = "https://www.omdbapi.com?apikey=6ac0248d";
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -68,22 +68,22 @@ const App = () => {
         </div>
       )}{" "}
       {/* <button
-                                                                             onClick={() => {
-                                                                               setCount((prCount) => prCount + 1);
-                                                                             }}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  >
-                                                                             {" "}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    +{" "}
-                                                                           </button>{" "}
-                                                                           <h1> {count} </h1>{" "}
-                                                                           <button
-                                                                             onClick={() => {
-                                                                               setCount((ncount) => ncount - 1);
-                                                                             }}
-                                                                          >
-                                                                            {" "}
-                                                                             -{" "}
-                                                                           </button>{" "} */}{" "}
+                                                                                         onClick={() => {
+                                                                                           setCount((prCount) => prCount + 1);
+                                                                                         }}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              >
+                                                                                         {" "}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                +{" "}
+                                                                                       </button>{" "}
+                                                                                       <h1> {count} </h1>{" "}
+                                                                                       <button
+                                                                                         onClick={() => {
+                                                                                           setCount((ncount) => ncount - 1);
+                                                                                         }}
+                                                                                      >
+                                                                                        {" "}
+                                                                                         -{" "}
+                                                                                       </button>{" "} */}{" "}
     </div>
   );
 };
